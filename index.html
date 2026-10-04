@@ -248,6 +248,7 @@
     .wm { font-weight: 800; font-size: 1.4rem; letter-spacing: -.03em; display: inline-flex; align-items: baseline; color: var(--ink); }
     .wm b { color: #f97316; font-size: 1.8em; line-height: .7; margin-right: 1px; }
     .panel .wm { font-size: 2rem; justify-content: center; margin-bottom: 14px; }
+    .wm .lg, .sh-wm .lg { font-size: .62em; font-weight: 700; letter-spacing: -.01em; color: #8b93a5; margin-left: 2px; }
     .crmtag { font-size: .7rem; font-weight: 800; letter-spacing: .12em; color: var(--muted); background: rgba(255,255,255,.7); padding: 3px 10px; border-radius: 999px; margin: 0 8px 0 0; }
     .topbar { background: transparent; border: 0; padding: 14px 22px; } /* no backdrop-filter here: it traps the fixed sidebar inside the topbar */
     .app { --sw: 96px; }
@@ -561,7 +562,7 @@
   <!-- Sign in -->
   <div id="v-signin" class="center" hidden>
     <div class="panel">
-      <div class="wm"><b>O</b>rchid Legal</div>
+      <div class="wm"><b>O</b>rchid&nbsp;<span class="lg">Legal</span></div>
       <h1 id="auth-title">Welcome</h1>
       <p id="auth-sub">Choose an option to continue.</p>
       <div id="auth-choice">
@@ -584,7 +585,7 @@
   <!-- Signed in, but not an admin -->
   <div id="v-denied" class="center" hidden>
     <div class="panel">
-      <div class="wm"><b>O</b>rchid Legal</div>
+      <div class="wm"><b>O</b>rchid&nbsp;<span class="lg">Legal</span></div>
       <h1>No access</h1>
       <p>The account <strong id="denied-who"></strong> isn't set up for access to Orchid Legal. Sign out and try a different account, or ask a firm admin to add you.</p>
       <button id="btn-denied-out" class="btn btn-ghost" type="button">Sign out</button>
@@ -595,7 +596,7 @@
   <div id="v-student" class="sh" hidden>
     <div class="sh-util"><span>Orchid Student &middot; StudyHub</span><span class="sh-sp"></span><span class="sh-sync" id="sh-sync" role="status"></span><button class="sh-ulink" type="button" data-t="guide">Need help? Open the button guide</button></div>
     <header class="sh-top">
-      <div class="sh-wm"><b>O</b>rchid Legal</div><span class="sh-tag">STUDENT</span>
+      <div class="sh-wm"><b>O</b>rchid&nbsp;<span class="lg">Legal</span></div><span class="sh-tag">STUDENT</span>
       <input id="sh-gq" class="sh-gq" type="search" placeholder="Search tasks, subjects, classes, notes…" aria-label="Global search">
       <span class="sh-sp"></span>
       <button class="sh-btn p" id="sh-new" type="button">+ New task</button>
@@ -613,7 +614,7 @@
   <div id="v-app" class="app" hidden>
     <div class="util"><span>Orchid Legal &middot; Law firm CRM</span><span class="sp"></span><button type="button" class="ulink" data-tab="help">Need help? Open the button guide</button></div>
     <header class="topbar">
-      <div class="wm"><b>O</b>rchid Legal</div>
+      <div class="wm"><b>O</b>rchid&nbsp;<span class="lg">Legal</span></div>
       <h1 class="crmtag">CRM</h1>
       <input id="gq" class="gq" type="search" placeholder="Search all inquiries…" aria-label="Global search">
       <nav class="tabs" aria-label="Sections">
